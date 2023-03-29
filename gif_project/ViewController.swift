@@ -9,10 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var count = 0
+    let IMAGE_NUMBERS = 15
+    let IMAGE_PREFIX = "frame_"
+    let FIRST_IMAGE_INDEX = 0
+    let IMAGE_SUFIX = "_delay.jpg"
+    
+    var currentImageIndex = 0
     
     lazy var liza: UIImageView = {
-        let imageName = "frame_00_delay-0.1s.gif"
+        let imageIndexName = String(format: "%03d", FIRST_IMAGE_INDEX)
+        let imageName = IMAGE_PREFIX + imageIndexName + IMAGE_SUFIX
         let image = UIImage(named: imageName)
         let view = UIImageView(image: image)
         
@@ -36,15 +42,15 @@ class ViewController: UIViewController {
     
     
     @objc func onNextImageTap(sender: UIButton!) {
-        count += 1
+        currentImageIndex += 1
         
-        if count > 11 {
-            count = 0
+        if currentImageIndex > IMAGE_NUMBERS {
+            currentImageIndex = FIRST_IMAGE_INDEX
         }
         
-        let nextImageNumber = String(format: "%02d", count)
+        let nextImageNumber = String(format: "%03d", currentImageIndex)
         
-        liza.image = UIImage(named: "frame_\(nextImageNumber)_delay-0.1s.gif")
+        liza.image = UIImage(named: "\(IMAGE_PREFIX)\(nextImageNumber)\(IMAGE_SUFIX)")
     }
     
     func constraintImage() {
