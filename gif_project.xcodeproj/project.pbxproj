@@ -516,7 +516,7 @@
 				DEVELOPMENT_TEAM = RMB6QE6U8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gif_project/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Ios Course";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gif Slowmotion App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -545,7 +545,7 @@
 				DEVELOPMENT_TEAM = RMB6QE6U8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gif_project/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Ios Course";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gif Slowmotion App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
